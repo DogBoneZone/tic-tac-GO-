@@ -73,6 +73,6 @@ html {
         grid-template-rows: repeat(3, 150px);
     }
     .box {
-        font-size: 100px;
+        font-size: 125px;
     }
 }
