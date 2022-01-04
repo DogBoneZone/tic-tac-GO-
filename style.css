@@ -1,0 +1,78 @@
+/* ========================
+        Global Styles
+   ======================== */
+
+html {
+    background: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========================
+        Game Board
+   ======================== */
+
+.playArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gameHeader {
+    text-decoration: underline;
+}
+
+.CPUDifficulty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreBoard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.scoreCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.box {
+    border: solid black;
+    font-size: 65px;
+    text-align: center;
+}
+
+.box:hover {
+    transition: 1.5s;
+    background: white;
+}
+
+/* ========================
+        Larger Screens
+   ======================== */
+
+@media (min-width: 500px) {
+    .gameBoard {
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(3, 150px);
+    }
+    .box {
+        font-size: 100px;
+    }
+}
